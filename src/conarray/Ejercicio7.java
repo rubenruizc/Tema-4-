@@ -26,22 +26,23 @@ public class Ejercicio7 {
 		System.out.println("Apuesta ganadora: " + Arrays.toString(tabla2));
 		System.out.println("Apuesta random: " + Arrays.toString(tabla1));
 		System.out.println();
-//		int aciertos = contarAciertos(tabla1, tabla2);
-//		System.out.println("Número de aciertos: " + aciertos);
-		
+		int aciertos = contarAciertos(tabla1, tabla2);
+		System.out.println("Número de aciertos: " + aciertos);
+
 		sc.close();
 	}
-}
 
-//	private static int contarAciertos(int[] tabla1, int[] tabla2) {
-//		int aciertos = 0;
-//
-//		for (int numeroUsuario : tabla1) {
-//			if (Arrays.binarySearch(tabla2, numeroUsuario) >= 0) {
-//				aciertos++;
-//			}
-//		}
-//
-//		return aciertos;
-//	}
-//}
+
+
+	private static int contarAciertos(int[] tabla1, int[] tabla2) {
+		int aciertos = 0;
+
+		for (int numeroUsuario : tabla1) {
+			if (Arrays.binarySearch(tabla2, numeroUsuario) >= 0) {
+				aciertos++;
+			}
+		}
+
+		return aciertos;
+	}
+}
