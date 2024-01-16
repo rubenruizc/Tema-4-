@@ -10,6 +10,7 @@ public class Ejercicio6 {
 		int valorN;
 		int contador = 0;
 		Scanner sc = new Scanner(System.in);
+		
 		for (int i = 0; i < tabla.length; i++) {
 			tabla[i] = (int) (Math.random() * 100);
 		}
