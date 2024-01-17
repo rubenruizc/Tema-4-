@@ -6,36 +6,69 @@ import java.util.Scanner;
 public class Ejercicio7 {
 
 	public static void main(String[] args) {
+		
+		// Variable donde guardaremos la tabla de la apuesta random
 		int tabla1[] = new int[6];
-		int tabla2[] = new int[6];
-		int numeroUsuario;
-		Scanner sc = new Scanner(System.in);
-
-		for (int i = 0; i < tabla2.length; i++) {
-			System.out.println("Escriba el número ganador: ");
-			numeroUsuario = sc.nextInt();
-			tabla2[i] = numeroUsuario;
-		}
-
-		Arrays.sort(tabla2);
-
-		for (int i = 0; i < tabla1.length; i++) {
-			tabla1[i] = (int) (Math.random() * 49 + 1);
-		}
-
+		
+		// Variable donde guardaremos la tabla de la apuesta ganadora 
+		int tabla2[] = {2,15,23,33,37,42};
+		
+		// Variable donde guardaremos el número de aciertos
 		int aciertos = 0;
+		
+		// Variable donde generaremos números random desde el 1 al 49
+		int numero;
+		
+		// Variable donde guardaremos la búsqueda de números repetidos 
+		int busqueda = 0;
+		
+		// Scanner para leer del teclado
+		Scanner sc = new Scanner(System.in);
+		
+		// Bucle para generar números random e introducirlos en la tabla random
+		while (busqueda < tabla1.length) {
+			numero = (int) (Math.random() * 49 + 1);
+			if (busquedaSecuencial(tabla1, numero) < 0) {
+				tabla1[busqueda] = numero;
+				busqueda++;
+			}
 
-		for (int numUsuario : tabla1) {
-			if (Arrays.binarySearch(tabla2, numUsuario) >= 0) {
+		}
+		
+		// Bucle para saber el número de aciertos que hemos conseguido
+		for (int valor : tabla1) {
+			if (Arrays.binarySearch(tabla2, valor) >= 0) {
 				aciertos++;
 			}
 		}
-
+		
+		// Imprimimos la apuesta ganadora
 		System.out.println("Apuesta ganadora: " + Arrays.toString(tabla2));
+		
+		// Imprimimos la apuesta random
 		System.out.println("Apuesta random: " + Arrays.toString(tabla1));
+		
+		// Imprimimos un espacio 
 		System.out.println();
+		
+		// Imprimimos el número de aciertos conseguidos
 		System.out.println("Número de aciertos: " + aciertos);
 
+		// Cerramos el Scanner 
 		sc.close();
+		
+	} // Cierre del main
+
+	// Funcion para buscar si en la apuesta random hay números repetidos
+	public static int busquedaSecuencial(int[] tabla, int valor) {
+		int indice = 0;
+
+		while (indice < tabla.length && valor != tabla[indice]) {
+			indice++;
+		}
+		if (indice == tabla.length) {
+			indice = -1;
+		}
+		return indice;
 	}
-}
+} // Cierre de la clase 
