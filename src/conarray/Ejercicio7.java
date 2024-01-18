@@ -25,7 +25,7 @@ public class Ejercicio7 {
 		// Scanner para leer del teclado
 		Scanner sc = new Scanner(System.in);
 
-		// Bucle para generar números random e introducirlos en la tabla random
+		// Bucle para generar números random e introducirlos en la tabla random y generar uno nuevo si ha salido repetido
 		while (busqueda < tabla1.length) {
 			numero = (int) (Math.random() * 49 + 1);
 			if (busquedaSecuencial(tabla1, numero) < 0) {
