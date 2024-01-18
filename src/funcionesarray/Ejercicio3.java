@@ -15,7 +15,7 @@ public class Ejercicio3 {
 		longitud = sc.nextInt();
 		System.out.println("ELIJA HASTA QUE NÚMERO QUIERE QUE SE GENEREN LOS RANDOM: ");
 		fin = sc.nextInt();
-		rellenaPares(longitud, fin);
+		System.out.println(Arrays.toString(rellenaPares(longitud, fin)));
 		sc.close();
 	}
 
@@ -33,7 +33,7 @@ public class Ejercicio3 {
 		}
 
 		Arrays.sort(tabla);
-		System.out.println(Arrays.toString(tabla));
+
 		return tabla;
 	}
 
