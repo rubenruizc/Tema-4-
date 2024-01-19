@@ -11,6 +11,8 @@ public class Ejercicio1 {
 
 		// Bucle para ir introduciendo en la tabla números aleatorios entre el 1 y el 20
 		for (int i = 0; i < tablaEnteros.length; i++) {
+
+			// Introducimos el número a la tabla
 			tablaEnteros[i] = (int) (Math.random() * 20 + 1);
 		}
 
