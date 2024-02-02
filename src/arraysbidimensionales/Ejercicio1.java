@@ -1,11 +1,20 @@
 package arraysbidimensionales;
 
+/**
+ * Clase donde recogeremos el ejercicio 1
+ */
 public class Ejercicio1 {
 
+	/**
+	 * Método main
+	 * 
+	 * @param args
+	 */
+	
 	public static void main(String[] args) {
 
 		// Creamos un array bidimensional
-		int num[][] = new int[3][6];
+		final int num[][] = new int[3][6];
 
 		// Introducimos los valores deseados a cada índice de la tabla/array
 		num[0][0] = 0;
