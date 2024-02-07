@@ -25,7 +25,7 @@ public class Ejercicio2 {
 		for (int i = 0; i < NUM_ALUMNOS; i++) {
 			System.out.println("Notas del alumno " + (i + 1) + ":");
 			
-			// Bucle para ir preguntando las notas por cada asignatura
+			// Bucle para ir preguntando las notas por cada asignatura e introducirlas en la tabla notas
 			for (int j = 0; j < NUM_ASIGNATURAS; j++) {
 				System.out.print("Nota Asignatura " + (j + 1) + ": ");
 				pedirNota = sc.nextDouble();
@@ -66,6 +66,8 @@ public class Ejercicio2 {
         // Calcular y mostrar la nota mínima, máxima y media de cada alumno
         System.out.println("\nNotas de cada Alumno:");
         System.out.println("-------------------------------------------------");
+        
+        // 
         for (int i = 0; i < NUM_ALUMNOS; i++) {
             double min = notas[i][0];
             double max = notas[i][0];
