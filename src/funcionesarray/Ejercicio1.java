@@ -2,6 +2,11 @@ package funcionesarray;
 
 import java.util.Arrays;
 
+/**
+ * Clase donde realizaremos el ejercicio 1 que consiste en sumar elementos de
+ * una tabla
+ */
+
 public class Ejercicio1 {
 
 	public static void main(String[] args) {
@@ -24,7 +29,13 @@ public class Ejercicio1 {
 
 	}
 
-	// Función para que los elementos de la tabla se sumen
+	/**
+	 * Función para que los elementos de la tabla se sumen
+	 * 
+	 * @param tabla
+	 * @return
+	 */
+
 	public static int sumaEnteros(int[] tabla) {
 		int suma = 0;
 		for (int numeros : tabla) {

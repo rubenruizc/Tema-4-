@@ -4,6 +4,11 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Clase donde realizaremos el ejercicio 3 que consiste en rellenar una tabla
+ * con números pares
+ */
+
 public class Ejercicio3 {
 
 	public static void main(String[] args) {
@@ -37,7 +42,14 @@ public class Ejercicio3 {
 		sc.close();
 	}
 
-	// Función para rellenar la función con números pares
+	/**
+	 * Función para rellenar la tabla con números pares
+	 * 
+	 * @param longitud
+	 * @param fin
+	 * @return
+	 */
+
 	public static int[] rellenaPares(int longitud, int fin) {
 
 		// Variable donde guardaremos la tabla/ array con longitud introducida por el

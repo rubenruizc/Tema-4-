@@ -1,7 +1,7 @@
 package arraysbidimensionales;
 
 /**
- * Clase donde se realizara el ejercicio que consite en dar una vuelta de 90
+ * Clase donde se realizara el ejercicio 10 que consite en dar una vuelta de 90
  * grados a una tabla introducida
  */
 public class Ejercicio10 {

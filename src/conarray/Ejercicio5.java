@@ -3,6 +3,10 @@ package conarray;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ *Clase donde realizaremos el ejercicio 5 que consiste en ordenar una tabla con valores introducido por el usuario
+ */
+
 public class Ejercicio5 {
 
 	public static void main(String[] args) {

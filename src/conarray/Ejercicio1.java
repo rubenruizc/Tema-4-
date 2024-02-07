@@ -3,6 +3,10 @@ package conarray;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ *Clase donde realizaremos el ejercicio 1 que consiste en rellenar una tabla de longitud y elementos elegidos por el usuario
+ */
+
 public class Ejercicio1 {
 
 	public static void main(String[] args) {

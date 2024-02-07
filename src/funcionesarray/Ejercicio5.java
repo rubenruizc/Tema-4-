@@ -3,6 +3,11 @@ package funcionesarray;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * Clase donde realizaremos el ejercicio 5 que consiste en ir buscando el número
+ * introducido por el usuario en una tabla
+ */
+
 public class Ejercicio5 {
 
 	public static void main(String[] args) {
@@ -35,10 +40,12 @@ public class Ejercicio5 {
 		// Leemos el número
 		valorBusqueda = sc.nextInt();
 
-		// Introducimos en la tabla índices los valores donde se encuentra el número deseado
+		// Introducimos en la tabla índices los valores donde se encuentra el número
+		// deseado
 		indices = buscarTodos(t, valorBusqueda);
 
-		// Condicional para imprimir una cosa u otra dependiendo de si ha encontrado el número en la tabla o no
+		// Condicional para imprimir una cosa u otra dependiendo de si ha encontrado el
+		// número en la tabla o no
 		if (indices.length == 0) {
 			System.out.println("El valor no se encuentra en la tabla.");
 		} else {
@@ -52,10 +59,18 @@ public class Ejercicio5 {
 		sc.close();
 	}
 
-	// Función para ir buscando el número introducido por el usuario
+	/**
+	 * Función para ir buscando el número introducido por el usuario
+	 * 
+	 * @param t
+	 * @param valor
+	 * @return
+	 */
+	
 	public static int[] buscarTodos(int[] t, int valor) {
 
-		// Variable donde guardaremos la cantidad de veces que se ha encontrado el número
+		// Variable donde guardaremos la cantidad de veces que se ha encontrado el
+		// número
 		int contador = 0;
 
 		// Contar la cantidad de veces que aparece el valor en el array

@@ -4,6 +4,11 @@ import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+/**
+ * Clase donde realizaremos el ejercicio 6 que consiste en ir sumando los
+ * elementos de una tabla
+ */
+
 public class Ejercicio6 {
 
 	public static void main(String[] args) {
@@ -22,40 +27,33 @@ public class Ejercicio6 {
 		// Variable donde guardaremos la cantidad de números que se van a sumar
 		int numElementos = 0;
 
-		
-
-			do {
-				try {
+		do {
+			try {
 				System.out.println("Cuantos números quieres que se sumen: ");
 				numElementos = sc.nextInt();
-				
-				} catch (InputMismatchException e) {
-					System.out.println("DEBE INTRODUCIR UN NÚMERO");
-					numElementos = -1;
-					sc.nextLine();
-				}
-				
-			} while (numElementos < 0);
 
-		
-		
-		
-			do {
-				try {
+			} catch (InputMismatchException e) {
+				System.out.println("DEBE INTRODUCIR UN NÚMERO");
+				numElementos = -1;
+				sc.nextLine();
+			}
+
+		} while (numElementos < 0);
+
+		do {
+			try {
 				System.out.println("Introduzca la longitud de la tabla: ");
 				longitud = sc.nextInt();
 
 				if (numElementos > longitud) {
 					System.out.println("Debes introducir una longitud mayor al número de elementos");
 				}
-				
-				} catch (InputMismatchException e) {
-					System.out.println("DEBE INTRODUCIR UN NÚMERO");
-					sc.nextLine();
-				}
-			} while (numElementos > longitud);
 
-		
+			} catch (InputMismatchException e) {
+				System.out.println("DEBE INTRODUCIR UN NÚMERO");
+				sc.nextLine();
+			}
+		} while (numElementos > longitud);
 
 		// Establecemos la longitud de la tabla
 		t = new int[longitud];
@@ -78,7 +76,14 @@ public class Ejercicio6 {
 		sc.close();
 	}
 
-	// Función para realizar la suma de los elementos
+	/**
+	 * Función para realizar la suma de los elementos
+	 * 
+	 * @param t
+	 * @param numElementos
+	 * @return
+	 */
+	
 	public static int[] suma(int[] t, int numElementos) {
 
 		// Variable donde guardaremos la tabla / array de longitud 4

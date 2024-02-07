@@ -2,6 +2,10 @@ package conarray;
 
 import java.util.Scanner;
 
+/**
+ *Clase donde realizaremos el ejercicio 6 que consiste en buscar en una tabla el valor que quiera el usuario
+ */
+
 public class Ejercicio6 {
 
 	public static void main(String[] args) {

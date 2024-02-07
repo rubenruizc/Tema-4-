@@ -3,6 +3,10 @@ package conarray;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ *Clase donde realizaremos el ejercicio 3 que consiste en comparar si dos tablas son iguales
+ */
+
 public class Ejercicio3 {
 
 	public static void main(String[] args) {

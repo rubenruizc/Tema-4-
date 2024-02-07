@@ -3,6 +3,10 @@ package conarray;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ *Clase donde realizaremos el ejercicio 7 que consiste jugar a la primitiva
+ */
+
 public class Ejercicio7 {
 
 	public static void main(String[] args) {
@@ -58,7 +62,12 @@ public class Ejercicio7 {
 
 	}// Cierre del main
 
-	// Funcion para buscar si en la apuesta random hay números repetidos
+	/**
+	 * Funcion para buscar si en la apuesta random hay números repetidos
+	 * @param tabla
+	 * @param valor
+	 * @return
+	 */
 	public static int busquedaSecuencial(int[] tabla, int valor) {
 		int indice = 0;
 

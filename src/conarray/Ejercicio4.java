@@ -2,6 +2,10 @@ package conarray;
 
 import java.util.Arrays;
 
+/**
+ *Clase donde realizaremos el ejercicio 4 que consiste en ordenar una tabla
+ */
+
 public class Ejercicio4 {
 
 	public static void main(String[] args) {

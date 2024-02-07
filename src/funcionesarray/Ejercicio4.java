@@ -2,6 +2,11 @@ package funcionesarray;
 
 import java.util.Scanner;
 
+/**
+ * Clase donde realizaremos el ejercicio 4 que consiste en encontrar la posición
+ * / índice del número del usuario
+ */
+
 public class Ejercicio4 {
 
 	public static void main(String[] args) {
@@ -32,7 +37,8 @@ public class Ejercicio4 {
 		// Leemos el número
 		numeroBuscar = sc.nextInt();
 
-		// Imprimimos la posición donde se encuentra el número del usuario y llamamos a la función
+		// Imprimimos la posición donde se encuentra el número del usuario y llamamos a
+		// la función
 		System.out.println("El número: " + numeroBuscar + " se encuentra en la posición " + buscar(t, numeroBuscar));
 
 		// Cierre del Scanner
@@ -40,13 +46,21 @@ public class Ejercicio4 {
 
 	} // Cierre del main
 
-	// Función para encontrar la posición / índice del número del usuario
+	/**
+	 * Función para encontrar la posición / índice del número del usuario
+	 * 
+	 * @param t
+	 * @param clave
+	 * @return
+	 */
+
 	public static int buscar(int t[], int clave) {
 
 		// Variable donde guardaremos el índice
 		int indiceBusqueda = 0;
 
-		// Bucle para ir pasando de un índice a otro hasta encontrar el número del usuario
+		// Bucle para ir pasando de un índice a otro hasta encontrar el número del
+		// usuario
 		while (indiceBusqueda < t.length && clave != t[indiceBusqueda]) {
 			indiceBusqueda++;
 		}

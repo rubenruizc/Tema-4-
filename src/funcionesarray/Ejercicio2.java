@@ -2,6 +2,11 @@ package funcionesarray;
 
 import java.util.Arrays;
 
+/**
+ * Clase donde realizaremos el ejercicio 2 que consiste en calcular cual es el
+ * número máximo que se encuentra en una tabla
+ */
+
 public class Ejercicio2 {
 
 	public static void main(String[] args) {
@@ -28,7 +33,13 @@ public class Ejercicio2 {
 
 	} // Cierre del main
 
-	// Función para calcular cual es el número máximo que se encuentra en la tabla
+	/**
+	 * Función para calcular cual es el número máximo que se encuentra en la tabla
+	 * 
+	 * @param tabla
+	 * @return
+	 */
+
 	public static int numeroMaximo(int[] tabla) {
 
 		// Variable donde guardaremos el valor máximo

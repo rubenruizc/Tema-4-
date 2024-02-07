@@ -2,6 +2,10 @@ package conarray;
 
 import java.util.Arrays;
 
+/**
+ *Clase donde realizaremos el ejercicio 2 que consiste en introducir en una tabla números repitiendolos las veces que sea dicho número
+ */
+
 public class Ejercicio2 {
 
 	public static void main(String[] args) {
