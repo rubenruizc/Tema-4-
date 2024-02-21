@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Ejercicio17 {
 
+	public static final String FIN = "*/";
+	public static final String INICIO = "/*";
+
 	public static void main(String[] args) {
 		String frase;
 
@@ -22,11 +25,20 @@ public class Ejercicio17 {
 		sc.close();
 	}
 
-	public static String eliminarComentarios(String frase) {
-		// Eliminar comentarios de una línea
-		frase = frase.replaceAll("//.*", "");
-		// Eliminar comentarios de múltiples líneas
-		frase = frase.replaceAll("/\\*.*?\\*/", "");
-		return frase;
+	public static String eliminarComentarios(String codigoC) {
+		String cadSinComentarios = "";
+		int inicio;
+		int fin;
+		inicio = codigoC.indexOf(INICIO);
+		fin = codigoC.indexOf(FIN);
+		
+		while (inicio!=-1) {
+			cadSinComentarios += codigoC.substring(fin,inicio);
+			fin = codigoC.indexOf(INICIO,fin);
+			inicio = codigoC.indexOf(INICIO,fin);
+		}
+		
+		cadSinComentarios += codigoC.substring(0, inicio) + codigoC.substring(fin + FIN.length());
+		return cadSinComentarios;
 	}
 }

@@ -6,16 +6,18 @@ public class Ejercicio18 {
 
 	public static void main(String[] args) {
 		String titulo;
-		
+
 		String htmlGenerado;
-		
-		String contenido = "Este es el contenido de la página.";
-		
+
+		String contenido;
+
 		Scanner sc = new Scanner(System.in);
 
 		System.out.println("Título de la página:");
 		titulo = sc.nextLine();
 
+		System.out.println("Contenido de la página:");
+		contenido = sc.nextLine();
 		htmlGenerado = generarHTML(titulo, contenido);
 		System.out.println(htmlGenerado);
 
