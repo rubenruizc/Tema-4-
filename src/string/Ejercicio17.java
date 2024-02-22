@@ -4,41 +4,72 @@ import java.util.Scanner;
 
 public class Ejercicio17 {
 
-	public static final String FIN = "*/";
-	public static final String INICIO = "/*";
-
 	public static void main(String[] args) {
-		String frase;
+		// Variable donde se almacenará el código
+		String codigo = "";
 
-		String fraseSinComentarios;
-
+		// Creamos el Scanner
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Escriba una frase:");
+		// Le pedimos al usuario el código
+		System.out.println("Introduce el código en C");
+		codigo = sc.nextLine();
 
-		frase = sc.nextLine();
+		System.out.println(codigoSinComents(codigo));
 
-		fraseSinComentarios = eliminarComentarios(frase);
-
-		System.out.println(fraseSinComentarios);
-
+		// Cerramos el Scanner
 		sc.close();
 	}
 
-	public static String eliminarComentarios(String codigoC) {
-		String cadSinComentarios = "";
-		int inicio;
-		int fin;
-		inicio = codigoC.indexOf(INICIO);
-		fin = codigoC.indexOf(FIN);
-		
-		while (inicio!=-1) {
-			cadSinComentarios += codigoC.substring(fin,inicio);
-			fin = codigoC.indexOf(INICIO,fin);
-			inicio = codigoC.indexOf(INICIO,fin);
+	/**
+	 * Método que elimina los comentarios del código
+	 * 
+	 * @param codigo Codigo completo
+	 * @return Codigo sin comentarios
+	 */
+	static String codigoSinComents(String codigo) {
+		// Variable donde se almacenará el código sin comentarios
+		String noComments = "";
+
+		// Variable donde se almacenará si está en comentario
+		boolean inComment = false;
+
+		// Variable donde se almacenará el caracter actual
+		char currentChar;
+
+		// Bucle para recorrer la cadena
+		for (int i = 0; i < codigo.length(); i++) {
+			// Obtenemos el caracter actual
+			currentChar = codigo.charAt(i);
+
+			// Comprobamos si está en un comentario
+			if (!inComment) {
+				// Comprobamos si el caracter actual es / y el siguiente *
+				if (currentChar == '/' && i + 1 < codigo.length() && codigo.charAt(i + 1) == '*') {
+					// Cambiamos el valor a true de inComment
+					inComment = true;
+
+					// Nos saltamos el asterisco
+					i++;
+				} else {
+					// Añadimos el char a la frase si no está comentado
+					noComments += currentChar;
+				}
+			} else {
+				// Si está en comentario, comprobamos si el caracter actual es * y el siguiente
+				// /
+				if (currentChar == '*' && i + 1 < codigo.length() && codigo.charAt(i + 1) == '/') {
+					// Cambiamos el valor a false de inComment
+					inComment = false;
+
+					// Nos saltamos la barra
+					i++;
+				}
+			}
 		}
-		
-		cadSinComentarios += codigoC.substring(0, inicio) + codigoC.substring(fin + FIN.length());
-		return cadSinComentarios;
+
+		// Devolvemos la cadena
+		return noComments;
 	}
+
 }
