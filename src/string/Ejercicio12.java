@@ -2,6 +2,10 @@ package string;
 
 import java.util.Scanner;
 
+/**
+ * Clase donde realizaremos el Ejerciico 12 de Strings
+ */
+
 public class Ejercicio12 {
 
 	public static void main(String[] args) {

@@ -2,6 +2,10 @@ package string;
 
 import java.util.Scanner;
 
+/**
+ * Clase donde realizaremos el Ejercicio 8 de Strings
+ */
+
 public class Ejercicio8 {
 
 	public static void main(String[] args) {
@@ -27,7 +31,11 @@ public class Ejercicio8 {
 
 	} // Cierre del main
 
-	// Función que comprueba si la frase añadida es Palíndroma
+	/**
+	 * Función que comprueba si la frase añadida es Palíndroma
+	 * @param fraseNormal
+	 * @return
+	 */
 	public static boolean esPalíndroma(String fraseNormal) {
 
 		// Variable donde guardaremos el resultado

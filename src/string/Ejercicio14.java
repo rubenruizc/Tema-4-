@@ -2,18 +2,34 @@ package string;
 
 import java.util.Scanner;
 
+/**
+ * Clase donde realizaremos el Ejercicio 14 de Strings
+ */
+
 public class Ejercicio14 {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Ingrese una frase: ");
-		String frase = sc.nextLine();
+		
+		// Variable donde guardaremos las letras de la frase
 		char caracter;
+		
+		// Variable donde guardaremos la frase del usuario
+		String frase;
+		
+		// Scanner para leer del teclado
+		Scanner sc = new Scanner(System.in);
+		
+		// Leemos la frase y la leemos
+		System.out.println("Introduzca una frase: ");
+		frase = sc.nextLine();
+		
 		// Convertimos la frase a minúsculas para considerar mayúsculas y minúsculas
 		// iguales
 		frase = frase.toLowerCase();
 
+		// Quitamos los espacios
 		frase = frase.replace(" ", "");
+		
 		// Creamos un array para contar las ocurrencias de cada letra (incluso
 		// caracteres especiales)
 		int[] contador = new int[256]; // Tamaño suficiente para cubrir todos los posibles caracteres
@@ -33,6 +49,10 @@ public class Ejercicio14 {
 			}
 		}
 
+		
+		// Cerramos el Scanner
 		sc.close();
-	}
-}
+	
+	} // Cierre del main
+
+} // Cierre de la clase

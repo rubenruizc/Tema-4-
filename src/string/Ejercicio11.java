@@ -2,9 +2,14 @@ package string;
 
 import java.util.Scanner;
 
+/**
+ * Clase donde realizaremos el Ejercicio 11 de Strings
+ */
+
 public class Ejercicio11 {
 
 	public static void main(String[] args) {
+
 		// Tabla de char conjunto1
 		char conjunto2[] = { 'e', 'i', 'k', 'm', 'p', 'q', 'r', 's', 't', 'u', 'v' };
 
@@ -17,7 +22,7 @@ public class Ejercicio11 {
 		// Variable donde se almacenará el caracter
 		char car = 0;
 
-		// Creamos el Scanner
+		// Scanner para leer del teclado
 		Scanner sc = new Scanner(System.in);
 
 		// Le pedimos la palabra al usuario
@@ -39,7 +44,7 @@ public class Ejercicio11 {
 	}
 
 	/**
-	 * Método que obtiene dos tablas de char y un char y devuelve la codificación
+	 * Función que obtiene dos tablas de char y un char y devuelve la codificación
 	 * 
 	 * @param conjunto1 Tabla de char
 	 * @param conjunto2 Tabla de codificación

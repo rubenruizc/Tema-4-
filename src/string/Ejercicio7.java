@@ -2,6 +2,10 @@ package string;
 
 import java.util.Scanner;
 
+/**
+ * Clase donde realizaremos el Ejercicio 7 de Strings
+ */
+
 public class Ejercicio7 {
 
 	public static void main(String[] args) {
@@ -42,7 +46,12 @@ public class Ejercicio7 {
 		
 	} // Cierre del main
 
-	// Función para contar las veces que sale la palabra que buscamos
+	/**
+	 * Función para contar las veces que sale la palabra que buscamos
+	 * @param frase
+	 * @param palabra
+	 * @return
+	 */
 	public static int contarPalabra(String frase, String palabra) {
 		// Variable donde guardaremos la cantidad de veces que esta la palabra en la
 		// frase

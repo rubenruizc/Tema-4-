@@ -2,6 +2,10 @@ package string;
 
 import java.util.Scanner;
 
+/**
+ * Clase donde realizaremos el Ejercicio 1 de Strings
+ */
+
 public class Ejercicio1 {
 
 	public static void main(String[] args) {

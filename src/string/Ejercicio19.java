@@ -2,10 +2,14 @@ package string;
 
 import java.util.Scanner;
 
+/**
+ * Clase donde realizaremos el Ejercicio 19 de Strings
+ */
+
 public class Ejercicio19 {
 
 	public static void main(String[] args) {
-		
+
 		// Variable donde guardaremos la frase del usuario
 		String frase;
 
@@ -24,7 +28,12 @@ public class Ejercicio19 {
 
 	} // Cierre del main
 
-	// Función para convertir una frase en CamelCase
+	/**
+	 * Función para convertir una frase en CamelCase
+	 * 
+	 * @param frase
+	 * @return
+	 */
 	public static String convertirACamelCase(String frase) {
 
 		// Dividir la frase en palabras utilizando el espacio como delimitador
@@ -55,10 +64,12 @@ public class Ejercicio19 {
 
 			// Convertir el resto de la palabra a minúsculas y agregarla al resultado
 			resultado += palabra.substring(1).toLowerCase();
-//            
+
 		}
 
 		// Devolver la cadena resultado con la frase convertida a CamelCase
 		return resultado;
-	}
-}
+
+	} // Cierre de la función
+
+} // Cierre de la clase

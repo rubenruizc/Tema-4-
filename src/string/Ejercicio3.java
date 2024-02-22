@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 public class Ejercicio3 {
 
+	/**
+	 * Clase donde realizaremos el Ejercicio 3 de Strings
+	 * 
+	 * @param args
+	 */
+
 	public static void main(String[] args) {
 
 		// Variable donde guardaremos la frase del usuario
@@ -11,6 +17,7 @@ public class Ejercicio3 {
 
 		// Variable donde guardaremos el número de espacios
 		int espacios;
+
 		// Scanner para leer del teclado
 		Scanner sc = new Scanner(System.in);
 
@@ -29,7 +36,12 @@ public class Ejercicio3 {
 
 	} // Cierre del main
 
-	// Función para contar el número de espacios en blanco
+	/**
+	 * Función para contar el número de espacios en blanco
+	 * 
+	 * @param frase
+	 * @return
+	 */
 	public static int contarEspaciosEnBlanco(String frase) {
 
 		// Variable donde guardaremos el contador de espacios

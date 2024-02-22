@@ -3,6 +3,10 @@ package string;
 import java.util.Random;
 import java.util.Scanner;
 
+/**
+ * Clase donde realizaremos el Ejercicio 16 de Strings
+ */
+
 public class Ejercicio16 {
 
 	public static void main(String[] args) {
@@ -50,7 +54,12 @@ public class Ejercicio16 {
 
 	} // Cierre del main
 
-	// Función para desordenar el texto
+	/**
+	 * Función para desordenar el texto
+	 * 
+	 * @param frase
+	 * @return
+	 */
 	public static String desordenacionTexto(String frase) {
 
 		// Creamos un array para guardar las letras de la frase introducidas por el
@@ -89,7 +98,13 @@ public class Ejercicio16 {
 		return String.valueOf(letrasDesordenadas);
 	}
 
-	// Función para contar las letras acertadas
+	/**
+	 * Función para contar las letras acertadas
+	 * 
+	 * @param fraseOriginal
+	 * @param intento
+	 * @return
+	 */
 	public static int contarCoincidencias(String fraseOriginal, String intento) {
 
 		// Variable donde guardaremos la cantidad de letras acertadas

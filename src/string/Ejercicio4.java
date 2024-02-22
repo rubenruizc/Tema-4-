@@ -3,6 +3,10 @@ package string;
 import java.util.Arrays;
 import java.util.Scanner;
 
+/**
+ * Clase donde realizaremos el Ejercicio 4 de Strings
+ */
+
 public class Ejercicio4 {
 
 	public static void main(String[] args) {

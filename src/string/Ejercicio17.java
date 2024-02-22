@@ -2,13 +2,18 @@ package string;
 
 import java.util.Scanner;
 
+/**
+ * Clase donde realizaremos el Ejercicio 17 de Strings
+ */
+
 public class Ejercicio17 {
 
 	public static void main(String[] args) {
+
 		// Variable donde se almacenará el código
 		String codigo = "";
 
-		// Creamos el Scanner
+		// Scanner para leer del teclado
 		Scanner sc = new Scanner(System.in);
 
 		// Le pedimos al usuario el código
@@ -19,7 +24,8 @@ public class Ejercicio17 {
 
 		// Cerramos el Scanner
 		sc.close();
-	}
+
+	} // Cierre del main
 
 	/**
 	 * Método que elimina los comentarios del código
@@ -70,6 +76,7 @@ public class Ejercicio17 {
 
 		// Devolvemos la cadena
 		return noComments;
-	}
 
-}
+	} // Cierre de la función
+
+} // Cierre de la clase
